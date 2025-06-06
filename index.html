@@ -8,43 +8,50 @@
     body { font-family: sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #222; }
     header { background: #111827; color: white; padding: 2rem; text-align: center; }
     h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    h2 { font-size: 1.25rem; margin-top: 0; font-weight: normal; color: #a5b4fc; }
+    h2 { font-size: 1.1rem; margin-top: 0; font-weight: normal; color: #a5b4fc; }
     .cta { margin: 2rem auto; text-align: center; }
     .cta a { background: #2563eb; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 6px; font-weight: bold; }
     section { max-width: 800px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    .benefits li { margin: 0.5rem 0; }
+    .benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.5rem; padding-left: 1rem; }
+    .benefits li { list-style: none; position: relative; padding-left: 1.5rem; }
+    .benefits li::before { content: "✅"; position: absolute; left: 0; }
+    .screenshot { width: 100%; max-width: 600px; display: block; margin: 2rem auto 1rem auto; border: 1px solid #ddd; border-radius: 6px; }
+    .quote { font-style: italic; text-align: center; margin: 1rem 2rem; color: #444; }
     footer { text-align: center; font-size: 0.9rem; color: #555; padding: 2rem 1rem; }
-    img.screenshot { width: 100%; max-width: 600px; display: block; margin: 1rem auto; border: 1px solid #ddd; border-radius: 6px; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Controlá tu inventario sin estrés</h1>
-  <h2>Vex Stock evita pérdidas y te avisa antes del quilombo</h2>
+  <h1>Control total de tu inventario, sin complicaciones</h1>
+  <h2>Vex Stock evita pérdidas, optimiza operaciones y anticipa errores críticos</h2>
   <div class="cta">
-    <a href="https://calendly.com/tu-link-demo">Quiero ordenar mi stock</a>
+    <a href="https://calendly.com/tu-link-demo">Agendar una demo</a>
   </div>
 </header>
 
 <section>
-  <h3>Ideal para ferreterías, agro y PYMEs reales</h3>
-  <p>Vex Stock es un sistema simple, rápido y desde el celular para que no pierdas más plata por errores de inventario.</p>
-  
+  <h3>Diseñado para ferreterías, agro y PYMEs reales</h3>
+  <p>Vex Stock funciona desde el celular y centraliza tu inventario en un solo panel. Automatizá alertas, asegurá trazabilidad y tomá decisiones con datos confiables.</p>
+
   <ul class="benefits">
-    <li>✅ Alertas de vencimiento automáticas</li>
-    <li>✅ Trazabilidad total: quién hizo qué y cuándo</li>
-    <li>✅ Movimientos entre depósitos y subalmacenes</li>
-    <li>✅ Panel claro: sabés qué hay, qué falta y qué se mueve</li>
-    <li>✅ IA que responde preguntas reales sobre tu stock</li>
-    <li>✅ Multiusuario con roles (dueño, encargados, etc.)</li>
+    <li>Alertas automáticas de vencimientos</li>
+    <li>Registro completo de movimientos</li>
+    <li>Trazabilidad: quién hizo qué y cuándo</li>
+    <li>IA que responde preguntas sobre tu inventario</li>
+    <li>Panel visual con métricas clave</li>
+    <li>Multiusuario con permisos diferenciados</li>
   </ul>
 
   <img class="screenshot" src="screenshot.png" alt="Pantalla del dashboard de Vex Stock">
+
+  <p class="quote">
+    “Implementar Vex Stock nos permitió reducir pérdidas por vencimiento y mejorar la trazabilidad del inventario. El impacto en la operación fue inmediato.”<br>— Responsable de Compras, Ferretería del Sur
+  </p>
 </section>
 
 <footer>
-  Vex Stock – Inventario simple para negocios reales
+  © 2025 Vex Stock. Tecnología de inventario para negocios reales.
 </footer>
 
 </body>
